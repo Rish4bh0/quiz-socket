@@ -1,0 +1,53 @@
+[
+    {
+      "questionText": "What is React?",
+      "answerOptions": [
+        { "answerText": "A server-side programming language", "isCorrect": false },
+        { "answerText": "A JavaScript library for building user interfaces", "isCorrect": true },
+        { "answerText": "A database management system", "isCorrect": false },
+        { "answerText": "A front-end framework for building responsive web applications", "isCorrect": false }
+      ],
+      "correctAnswer": "A JavaScript library for building user interfaces"
+    },
+    {
+      "questionText": "What is JSX in React?",
+      "answerOptions": [
+        { "answerText": "A programming language", "isCorrect": false },
+        { "answerText": "A preprocessor that adds XML syntax to JavaScript", "isCorrect": true },
+        { "answerText": "A framework for building user interfaces", "isCorrect": false },
+        { "answerText": "A server-side scripting language", "isCorrect": false }
+      ],
+      "correctAnswer": "A preprocessor that adds XML syntax to JavaScript"
+    },
+    {
+      "questionText": "What is the Virtual DOM in React?",
+      "answerOptions": [
+        { "answerText": "A browser-specific implementation of the DOM", "isCorrect": false },
+        { "answerText": "A server-side implementation of the DOM", "isCorrect": false },
+        { "answerText": "A lightweight representation of the actual DOM in memory", "isCorrect": true },
+        { "answerText": "A JavaScript library for manipulating the DOM", "isCorrect": false }
+      ],
+      "correctAnswer": "A lightweight representation of the actual DOM in memory"
+    },
+    {
+        "questionText": "What is the purpose of state in React?",
+        "answerOptions": [
+          { "answerText": "To hold global data that can be accessed across components", "isCorrect": false },
+          { "answerText": "To store data that can be modified within a component", "isCorrect": true },
+          { "answerText": "To store data that is constant and cannot be modified", "isCorrect": false },
+          { "answerText": "To store data that is passed from a parent component to a child component", "isCorrect": false }
+        ],
+        "correctAnswer": "To store data that can be modified within a component"
+      },
+      {
+        "questionText": "What is the purpose of props in React?",
+        "answerOptions": [
+          { "answerText": "To hold global data that can be accessed across components", "isCorrect": false },
+          { "answerText": "To store data that can be modified within a component", "isCorrect": false },
+          { "answerText": "To store data that is constant and cannot be modified", "isCorrect": false },
+          { "answerText": "To pass data from a parent component to a child component", "isCorrect": true }
+        ],
+        "correctAnswer": "To pass data from a parent component to a child component"
+      }
+  ]
+  

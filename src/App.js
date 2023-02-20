@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import "./App.css";
+import questions from './questions.json';
+import "./discord-theme.css";
+
 
 const socket = io("http://localhost:4000");
 
@@ -16,38 +19,7 @@ function App() {
   const [connectedUsers, setConnectedUsers] = useState([]);
   
 
-  const questions = [
-    {
-      questionText: "What is the capital of France?",
-      answerOptions: [
-        { answerText: "New York", isCorrect: false },
-        { answerText: "London", isCorrect: false },
-        { answerText: "Paris", isCorrect: true },
-        { answerText: "Sydney", isCorrect: false },
-      ],
-      correctAnswer: "Paris",
-    },
-    {
-      questionText: "Who is the author of 'To Kill a Mockingbird'?",
-      answerOptions: [
-        { answerText: "Harper Lee", isCorrect: true },
-        { answerText: "Ernest Hemingway", isCorrect: false },
-        { answerText: "F. Scott Fitzgerald", isCorrect: false },
-        { answerText: "William Faulkner", isCorrect: false },
-      ],
-      correctAnswer: "Harper Lee",
-    },
-    {
-      questionText: "What is the largest country in the world by area?",
-      answerOptions: [
-        { answerText: "Canada", isCorrect: false },
-        { answerText: "Russia", isCorrect: true },
-        { answerText: "China", isCorrect: false },
-        { answerText: "United States", isCorrect: false },
-      ],
-      correctAnswer: "Russia",
-    },
-  ];
+  
 
   useEffect(() => {
     socket.on("userConnected", (id) => {
